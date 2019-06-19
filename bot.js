@@ -35,4 +35,4 @@ request.get('https://source.unsplash.com/random?poetry', function (error, respon
 }
 
 //getImage();
-setInterval(getImage, 7200000);
+setInterval(getImage, 60000);
