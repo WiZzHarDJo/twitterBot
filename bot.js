@@ -1,4 +1,6 @@
 const twit = require('twit');
+const http = require("http");
+
 require('dotenv/config');
 
 const config ={  
@@ -35,4 +37,7 @@ request.get('https://source.unsplash.com/random?poetry', function (error, respon
 }
 
 //getImage();
-setInterval(getImage, 60000);
+setInterval(function() {
+  http.get("http://<your app name>.herokuapp.com");
+  getImage();
+}, 1740000);
