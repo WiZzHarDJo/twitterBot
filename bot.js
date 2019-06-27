@@ -36,8 +36,4 @@ request.get('https://source.unsplash.com/random?poetry', function (error, respon
       })
 }
 
-//getImage();
-setInterval(function() {
-  http.get("http://<your app name>.herokuapp.com");
-  getImage();
-}, 1740000);
+getImage();
