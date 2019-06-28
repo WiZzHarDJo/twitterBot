@@ -18,7 +18,7 @@ function getImage(){
 
 var request = require('request').defaults({ encoding: null });
 
-request.get('https://source.unsplash.com/random?poetry', function (error, response, body) {
+request.get('https://source.unsplash.com/random?art', function (error, response, body) {
     if (!error && response.statusCode == 200) {
         bob = new Buffer.from(body).toString('base64');
         console.log(bob)
